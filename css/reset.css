@@ -1,0 +1,40 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.6;
+
+  background-color: #171520;
+  scrollbar-width: thin;
+  scrollbar-color: #353535 transparent;
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0e0e0e;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 6px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__title {
+  margin-top: 3rem;
+}

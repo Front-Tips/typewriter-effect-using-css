@@ -1,0 +1,36 @@
+@import "reset.css";
+
+/* --- Custom Properties -- */
+:root {
+  --steps: 4;
+  --typing-duration: 1.2s;
+  --caret-blink-duration: 0.5s;
+}
+
+.hero__title {
+  display: inline-block;
+  max-width: 0;
+  font: bold 300% monospace;
+  white-space: nowrap;
+  border-right: 1px solid transparent;
+
+  animation: typing var(--typing-duration) steps(var(--steps)) forwards,
+    caret var(--caret-blink-duration) steps(1) infinite;
+
+  overflow: hidden;
+}
+
+/* ---------------------------------- */
+/*              Animation             */
+/* ---------------------------------- */
+@keyframes typing {
+  to {
+    max-width: calc(var(--steps) * 1ch);
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-right-color: currentColor;
+  }
+}
